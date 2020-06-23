@@ -70,7 +70,7 @@ namespace :hutch do
   def start_hutch
     args = []
     args.push "--pidfile #{fetch :hutch_pid}"
-    args.push "--config #{fetch :hutch_config}"
+    # args.push "--config #{fetch :hutch_config}"
     args.push '--daemon'
     args.push fetch(:hutch_options) if fetch(:hutch_options)
 
